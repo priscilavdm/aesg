@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
         <!--[if lt IE 9]>
@@ -24,43 +24,20 @@
         <![endif]-->
 
         <div class="header-container">
-            <header class="wrapper clearfix">
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">A AESG</a></li>
-                        <li><a href="#">IMG Símbolo</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <?php include('menu.html'); ?>
         </div>
 
         <div class="main-container">
-            <div class="main wrapper clearfix">
-                <span>Seja Bem vindo a</span> 
+            <div class="main wrapper clearfix" id="aesg">
+                <img src="img/logo.png" alt="Associação Educacional Sírius-Gaia" />
+                <p>Seja Bem vindo a</p> 
                 <h1 class="title">Associação Educacional Sírius-Gaia</h1>
-                <a href="#" title="Conheça a AESG" class="button">Conheça a AESG</a>
-            </div> <!-- #main -->
+                <p><a href="aesg.php" title="Conheça a AESG" class="button">Conheça a AESG</a></p>
+            </div><!-- #main -->
         </div> <!-- #main-container -->
 
         <div class="footer-container">
-            <footer class="wrapper">
-                <h3>Associação Educacional Sírius-Gaia</h3>
-                <p>
-                    Alameda República do Chile, 119 - Chácara do Peroba<br/>
-                    Granja Viana - CEP: 06648-100 - Jandira - SP - Brasil<br/>
-                    www.aesg.org.br | www.siriusgaia.org.br<br/>
-                    www.facebook.com/aesg<br/>
-                    secretaria@siriusgaia.org.br
-                </p>
-                <p class="copyright">
-                        2016. Todos os direitos reservados. A AESG se coloca no direito de alterar quaisquer informações aqui presentes sem aviso prévio.<br/>
-                        Nenhuma informação deve ser utilizada sem prévia autorização da Administração.<br/>
-                        Este site foi produzido por Le Ceek??? Creative Studio.
-                </p>
-            </footer>
+            <?php include("footer.html");?>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>

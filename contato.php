@@ -24,17 +24,7 @@
         <![endif]-->
 
         <div class="header-container">
-            <header class="wrapper clearfix">
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">A AESG</a></li>
-                        <li><a href="#">IMG Símbolo</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <?php include "menu.html"?>
         </div>
 
         <div class="main-container">
@@ -51,7 +41,6 @@
 								<label for="nome">Nome</label>
 								<input type="text" id="nome">
 							</li>
-							
 							<li>
 								<label for="email">Email</label>
 								<input type="text" id="nome">
@@ -64,32 +53,16 @@
 								<label for="mensagem">Mensagem</label>
 								<textarea id="mensagem"></textarea>
 							</li>
-							
 							<li><button id="enviar" value="Enviar"></li>
 						</ul>
 					</form>
-					
                 </article>
 
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
         <div class="footer-container">
-            <footer class="wrapper">
-                <h3>Associação Educacional Sírius-Gaia</h3>
-                <p>
-                    Alameda República do Chile, 119 - Chácara do Peroba<br/>
-                    Granja Viana - CEP: 06648-100 - Jandira - SP - Brasil<br/>
-                    www.aesg.org.br | www.siriusgaia.org.br<br/>
-                    www.facebook.com/aesg<br/>
-                    secretaria@siriusgaia.org.br
-                </p>
-                <p class="copyright">
-                        2016. Todos os direitos reservados. A AESG se coloca no direito de alterar quaisquer informações aqui presentes sem aviso prévio.<br/>
-                        Nenhuma informação deve ser utilizada sem prévia autorização da Administração.<br/>
-                        Este site foi produzido por Le Ceek??? Creative Studio.
-                </p>
-            </footer>
+			<?php include "footer.html"?>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
