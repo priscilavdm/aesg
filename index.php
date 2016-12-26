@@ -27,8 +27,8 @@
             <?php include('menu.html'); ?>
         </div>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix" id="aesg">
+        <div class="main-container" id="home">
+            <div class="main wrapper clearfix">
                 <img src="img/logo.png" alt="Associação Educacional Sírius-Gaia" />
                 <p>Seja Bem vindo a</p> 
                 <h1 class="title">Associação Educacional Sírius-Gaia</h1>

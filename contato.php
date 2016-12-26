@@ -27,35 +27,35 @@
             <?php include "menu.html"?>
         </div>
 
-        <div class="main-container">
+        <div class="main-container" id="contato">
             <div class="main wrapper clearfix">
 
                 <article>
                     <header>
                         <h1>Fale com a AESG</h1>
-						<p>Para entrar em contato com a AESG, por favor, preencha o formulário abaixo. Entraremos em contato com você o mais rápido possível.</p>
+		<p>Para entrar em contato com a AESG, por favor, preencha o formulário abaixo. Entraremos em contato com você o mais rápido possível.</p>
                     </header>
-					<form id="form-contato">
-						<ul>
-							<li>
-								<label for="nome">Nome</label>
-								<input type="text" id="nome">
-							</li>
-							<li>
-								<label for="email">Email</label>
-								<input type="text" id="nome">
-							</li>
-							<li>
-								<label for="assunto">Assunto</label>
-								<input type="text" id="assunto">
-							</li>
-							<li>
-								<label for="mensagem">Mensagem</label>
-								<textarea id="mensagem"></textarea>
-							</li>
-							<li><button id="enviar" value="Enviar"></li>
-						</ul>
-					</form>
+		<form id="form-contato">
+			<ul>
+				<li>
+					<label for="nome">Nome</label>
+					<input type="text" id="nome">
+				</li>
+				<li>
+					<label for="email">Email</label>
+					<input type="text" id="nome">
+				</li>
+				<li>
+					<label for="assunto">Assunto</label>
+					<input type="text" id="assunto">
+				</li>
+				<li>
+					<label for="mensagem">Mensagem</label>
+					<textarea id="mensagem"></textarea>
+				</li>
+				<li><button id="enviar" value="Enviar"></li>
+			</ul>
+		</form>
                 </article>
 
             </div> <!-- #main -->
