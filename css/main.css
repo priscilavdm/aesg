@@ -7,6 +7,13 @@ html {
     /*line-height: 1.4;*/
 }
 
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
 body {
     background: #000;
     font-family: Montserrat, Helvetica;
@@ -42,11 +49,6 @@ body {
     ALL: Theme
    =================== */
 
-#eventos aside img {
-    width: 100%;
-    height: auto;
-}
-
 .title {
     color: #000;
     text-transform: uppercase;
@@ -69,7 +71,10 @@ p .aesg {
     background: #000;
     clear: both;
     color: #fff;
-    padding: 0.4em 3em;
+	display: inline-block;
+	font-size: 0.9em;
+	margin: 1em 0;
+    padding: 0.4em 3.5em;
     text-decoration: none;
     text-transform: uppercase;
     width: auto;
@@ -90,6 +95,7 @@ p .aesg {
 }
 
 .aesgsmall {
+    margin-left: 10.5%;
     text-align: center;
 }
 
@@ -99,19 +105,19 @@ p .aesg {
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
-    margin: 4px 10px 0 85px;
     min-width: 55px;
     min-height: 55px;
+	text-indent: -999em;
 }
 
 .footer-container h3 {
-    font-size: 0.71em;
+    font-size: 0.7em;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .footer-container p {
-    font-size: 0.71em;
+    font-size: 0.7em;
     line-height: 1.4em;
 }
 
@@ -121,7 +127,7 @@ p .aesg {
 
 #aesg section, #aesg aside {
     border-left: 1px solid #000;
-    padding: 1em;
+    padding: 0.5em 1em 0.5em;
     margin-bottom: 1em;
 }
 
@@ -135,17 +141,88 @@ p .aesg {
 }
 
 #aesg aside dt {
-    border-right: 1px solid #000;
-    clear: both;
-    float: left;
-    font-weight: bold;
-    padding-right: 4px;
-    width: auto;
+	clear: both;
+	float: left;
+	font-weight: bold;
+	padding-right: 4px;
+	text-transform: uppercase;
+	width: auto;
 }
 
 #aesg aside dd {
-    display: inline;
-    margin: 0 0 1em 4px;
+	margin: 0 0 1em 0;
+}
+
+#aesg section, #aesg article img {
+	float: left;
+}
+
+#aesg section {
+	width: 80%;
+}
+
+#aesg article img {
+	margin: -95px 0 0 30px;
+}
+
+#eventos article h1 {
+	border-bottom: 3px solid #000;
+	font-size: 1em;
+	padding-bottom: 0.8em;
+}
+
+#eventos article p {
+	font-size: 0.8em;
+}
+
+#eventos article strong {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#eventos aside {
+	text-align: center;
+}
+
+#eventos aside img {
+    width: 75%;
+    height: auto;
+}
+
+.button-eventos {
+	background: #363636;
+	clear: both;
+	color: #fff;
+	float: left;
+	font-size: 0.8em;
+	margin: 0.8em 0 2em;
+	padding: 0.4em 4em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: auto;
+}
+
+#contato article {
+	width: 100%;
+}
+
+#contato h1 {
+	font-size: 1.5em;
+}
+
+#contato p {
+	font-size: 0.8em;
+}
+
+#contato form ul li {
+	float: left;
+	list-style-type: none;
+}
+
+#contato textarea {
+	margin: -5% 0 0 2em;
+	resize: none;
 }
 
 /* ==============
@@ -286,6 +363,14 @@ nav a:hover {
         float: right;
         width: 45%;
     }
+	
+	#aesg .main article {
+        width: 55%;
+    }
+
+    #aesg .main aside {
+        width: 40%;
+    }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -346,6 +431,14 @@ nav a:hover {
 
 .clearfix {
     *zoom: 1;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
 }
 
 /* ==========================================================================
