@@ -54,6 +54,10 @@ body {
     text-transform: uppercase;
 }
 
+p.info {
+	background: url('../img/icon4.png') no-repeat right 0;
+}
+
 p.aesg {
     text-align: center;
 }
@@ -162,7 +166,12 @@ p .aesg {
 }
 
 #aesg article img {
-	margin: -95px 0 0 30px;
+	margin: -18% 0 0 0;
+	float: right;
+}
+
+#eventos article {
+	width: 35%;	
 }
 
 #eventos article h1 {
@@ -185,7 +194,7 @@ p .aesg {
 }
 
 #eventos aside img {
-    width: 75%;
+    width: 70%;
     height: auto;
 }
 
@@ -215,15 +224,80 @@ p .aesg {
 	font-size: 0.8em;
 }
 
+#contato form ul {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
 #contato form ul li {
+	clear: both;
 	float: left;
+	font-size: 0.8em;
 	list-style-type: none;
+	margin: 0 1em 1em 0;
+	text-transform: uppercase;
+	width: 40%;
+}
+
+#contato .mensagem {
+	clear: none;
+	float: left;
+	margin-top: -5.8em;
+}
+
+#contato label {
+	float: left;
+	margin: 0 0.5em 0 0;
+	min-width: 70px;
+	width: auto;
+}
+
+#contato input {
+	padding: 0.5em;
+	width: 70%;
 }
 
 #contato textarea {
-	margin: -5% 0 0 2em;
+	float: right;
+	margin: 0;
+	min-height: 10em;
+	padding: 0.5em;
 	resize: none;
+	width: 70%;
 }
+
+#contato input,
+#contato textarea {
+	background: #fff;
+	border: 0;
+	border-bottom: 1px solid #dedede;
+	font-size: 0.8em;	
+}
+
+#contato #enviar {
+	color: #000;
+	background: #fff;
+	border: 1px solid #dedede;
+	border-bottom: 4px solid #c2c2c2;
+	float: right;
+	padding: 0.8em 2.5em;
+	text-transform: uppercase;
+	width: auto;
+}
+#contato #enviar:hover {
+	background: #f9f9f9;
+}
+
+#contato #enviar:focus {
+	border-color: #d3d3d3;
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+}
+
 
 /* ==============
     MOBILE: Menu
@@ -434,7 +508,7 @@ nav a:hover {
 }
 
 .right {
-	float: right;
+	float: right !important;
 }
 
 .clear {

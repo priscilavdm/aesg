@@ -21,19 +21,19 @@
 								<label for="nome">Nome</label>
 								<input type="text" id="nome">
 							</li>
-							<li class="clear">
+							<li>
 								<label for="email">Email</label>
 								<input type="text" id="nome">
 							</li>
-							<li class="clear">
+							<li>
 								<label for="assunto">Assunto</label>
 								<input type="text" id="assunto">
 							</li>
-							<li>
+							<li class="right mensagem">
 								<label for="mensagem">Mensagem</label>
 								<textarea id="mensagem"></textarea>
 							</li>
-							<li class="clear right"><button id="enviar" value="Enviar"></li>
+							<li class="right"><input type="button" id="enviar" value="Enviar"></li>
 						</ul>
 					</form>
 				</article>

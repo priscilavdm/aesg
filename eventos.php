@@ -25,7 +25,7 @@
 						"A Grande Obra: O caminho,<br/>
 						a prática e a responsabilidade".
 					</strong>
-					<a href="#" class="button-eventos" title="Acesse o site do Simpósio aqui">Acesse o site do Simpósio aqui</a>
+					<a href="http://simposiohermetismo.com.br" target="_blank" class="button-eventos" title="Acesse o site do Simpósio aqui">Acesse o site do Simpósio aqui</a>
 				</article>
 
 				<aside>
