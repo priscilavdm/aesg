@@ -39,12 +39,6 @@ body {
     margin: 0 auto;
 }
 
-.header-container,
-.main,
-.footer-container {
-    max-width: 80%;
-}
-
 /* ===================
     ALL: Theme
    =================== */
@@ -173,6 +167,10 @@ p .aesg {
 	padding-left: 1em;
 	width: 78%;
 }
+
+#eventos .main {
+	padding: 1em;
+} 
 
 #eventos article {
 	width: 35%;	
