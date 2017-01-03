@@ -130,8 +130,8 @@ p .aesg {
 }
 
 #aesg section, #aesg aside {
-    border-left: 1px solid #000;
-    padding: 0.5em 1em 0.5em;
+    /*border-left: 1px solid #000;*/
+    padding: 0.5em 0 0.5em;
     margin-bottom: 1em;
 }
 
@@ -157,17 +157,21 @@ p .aesg {
 	margin: 0 0 1em 0;
 }
 
-#aesg section, #aesg article img {
+#aesg article section {
+	padding-left: 7.5em;
+	width: 71%;
+}
+
+#aesg aside img {
 	float: left;
+	margin: 3.5em 1em 0 0;
 }
 
-#aesg section {
-	width: 80%;
-}
-
-#aesg article img {
-	margin: -18% 0 0 0;
-	float: right;
+#aesg aside .aside {
+	border-left: 1px solid #000;
+	float: left;
+	padding-left: 1em;
+	width: 78%;
 }
 
 #eventos article {
@@ -439,11 +443,12 @@ nav a:hover {
     }
 	
 	#aesg .main article {
-        width: 55%;
+       	background: url('../img/icons2.png') no-repeat 0 0;
+		width: 45%;
     }
 
     #aesg .main aside {
-        width: 40%;
+        width: 50%;
     }
 }
 
