@@ -1,5 +1,6 @@
 <!doctype html>
 <?php include('header.html');?>
+<?php session_start(); ?>
 	<body>
 		<?php include("menu.html"); ?>
 
@@ -30,6 +31,7 @@
 							<li class="right"><input type="submit" id="enviar" value="Enviar"></li>
 						</ul>
 					</form>
+					<div class="response-msg"><?php echo $_SESSION['msg'];?></div>
 				</article>
 
 			</div> <!-- #main -->

@@ -1,15 +1,19 @@
-
-
 $(document).ready(function(){
-  $("#enviar").click(function(){
-    if(validaFormContato())
-    {
-      ("#enviar").submit();
-    }
-  });
+
+	/*
+	 * Executa validacao do formulario de contato e faz o submit
+	*/
+	$("#enviar").click(function(){
+    	if(validaFormContato()){
+    		$("#enviar").submit();
+    	}
+    });
+
 });
 
-
+/*
+ * Validacao do formulario de contato
+*/
 function validaFormContato() {
   return $("#form-contato").validate({
     rules: {

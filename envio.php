@@ -34,12 +34,16 @@ echo $subject."<br>";
 echo $texto."<br>";
 */
 
+$host = $_SERVER['HTTP_HOST'];
+$uri = rtrim(dirname($_SERVER['PHP_SELF']));
+$page = 'contato.php';
+
 if(mail($to,'Contato via site AESG',$texto,$mailheaders)){
 	$_SESSION['msg'] = "Mensagem enviada com sucesso!";
-	//header('Location: http://localhost/aesg/contato.php?msg=tr');
+	header('Location: http://'.$host.$uri.'/'.$page);
 } else {
 	$_SESSION['msg'] = "Falha ao enviar mensagem. Tente novamente mais tarde.";
-	//header('Location: http://localhost/aesg/contato.php?msg=fs');
+	header('Location: http://'.$host.$uri.'/'.$page);
 }
 
 ob_end_flush();

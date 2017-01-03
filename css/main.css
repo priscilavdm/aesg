@@ -300,6 +300,22 @@ p .aesg {
 	border-right-width: 2px;
 }
 
+label.error {
+	color: #ff0000;
+	font-size: 0.9em;
+	margin-left: 78px !important;
+	text-transform: none;
+}
+
+.mensagem label.error {
+	margin-left: 115px !important;
+}
+
+.response-msg {
+	color: #ff0000;
+	font-size: 1em;
+	text-align: center;
+}
 
 /* ==============
     MOBILE: Menu
