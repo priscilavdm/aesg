@@ -1,6 +1,8 @@
-<!doctype html>
-<?php include('header.html');?>
 <?php session_start(); ?>
+
+<!doctype html>
+
+<?php include('header.html');?>
 	<body>
 		<?php include("menu.html"); ?>
 
@@ -38,6 +40,6 @@
 		</div> <!-- #main-container -->
 
 		<?php include("footer.html"); ?>
-
+		<?php session_destroy(); ?>
 	</body>
 </html>

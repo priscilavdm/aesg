@@ -34,6 +34,8 @@ echo $subject."<br>";
 echo $texto."<br>";
 */
 
+ob_end_flush();
+
 $host = $_SERVER['HTTP_HOST'];
 $uri = rtrim(dirname($_SERVER['PHP_SELF']));
 $page = 'contato.php';
@@ -45,6 +47,4 @@ if(mail($to,'Contato via site AESG',$texto,$mailheaders)){
 	$_SESSION['msg'] = "Falha ao enviar mensagem. Tente novamente mais tarde.";
 	header('Location: http://'.$host.$uri.'/'.$page);
 }
-
-ob_end_flush();
 ?>
