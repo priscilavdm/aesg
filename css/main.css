@@ -458,9 +458,12 @@ nav a:hover {
 
 	#contato .mensagem {
 		margin-bottom: 2em;
-		margin-top: 1em;
-		
+		margin-top: 1em;	
 		overflow: hidden;
+	}
+	
+	.mensagem label.error {
+    	margin-left: 85px !important;
 	}
 	
 	#contato textarea {
@@ -468,7 +471,7 @@ nav a:hover {
 	}
 	
 	#contato #enviar {
-		margin-right: auto;
+		margin-right: 9em;
 	}
 	
 }
@@ -535,6 +538,27 @@ nav a:hover {
 		margin-right: 4em;
 	}
 
+}
+
+@media only screen and (max-width: 480px) {
+	#contato textarea {
+    	float: none;
+	}
+	
+	#contato label {
+		display: block;
+		float: none;
+	}
+	
+	#contato label.error {
+		margin-left: 0 !important;
+	}
+
+	#contato .mensagem label.error {
+		display: block;
+		float: none;
+		margin-left: 0 !important;
+	}
 }
 
 @media only screen and (min-width: 480px) {
